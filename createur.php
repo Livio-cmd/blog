@@ -100,16 +100,16 @@
             </form>
         </div>
     </div>
-    <script>
-        ClassicEditor
-            .create(document.querySelector('#editor'), {
-                ckfinder: {
-                    uploadUrl: '/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files&responseType=json',
-                }
-            })
-            .catch(error => {
-                console.error(error);
-            });
+    <script type="module">
+
+ClassicEditor
+    .create( document.querySelector( '#editor' ), {
+        
+	} )
+	.catch( error => {
+		console.error( error );
+	} );
+
     </script>
 </body>
 
